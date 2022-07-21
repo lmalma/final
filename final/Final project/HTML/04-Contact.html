@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="keywords"
+		content="טכנולוגיה,עזרה טכנולוגית,הדרכות טכנולוגיות,מדריכים טכנולוגיים,פלאפונים,נגנים,מחשבים,תוכנות,חשמל,פורום טכנולוגי,מתמחים טופ" />
+	<meta name="description" content="פורום טכנולוגיה" />
+	<link rel="icon" href="../Image/touchicon-192.png" />
+	<meta name="author" content="אליהו גיל" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://mitmachim.top/" />
+	<meta property="og:title" content="מתמחים טופ" />
+	<meta property="og:description" content="פורום טכנולוגיה" />
+	<meta property="og:image" content="https://mitmachim.top/assets/uploads/system/site-logo.png" />
+	<meta property="og:img:width" content="300" />
+	<meta property="og:img:height" content="300" />
+	<title>התחבר לחשבונך | מתמחים טופ</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css"
+		integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/a0f1b78b69.css" media="all" />
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<div class="container-fluid bg-light">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg navbar-light bg-light border border-end-0 border-start-0 border-top-0">
+				<div class="container-fluid">
+					<a class="navbar-brand" href="./01-HomePage.html"><img src="../Image/site-logo.png" width="230"
+							alt="site-logo" /></a>
+
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+						data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+							<li class="nav-item p-2">
+								<a class="nav-link active" aria-current="page" href="./02-Users.html" title="משתמשים"><i
+										class="fa fa-fw fa-user"></i></a>
+							</li>
+							<li class="nav-item p-2">
+								<a class="nav-link" href="./03-Topics.html" title="פוסטים אחרונים">
+									<i class="fa fa-fw fa-clock-o"></i>
+								</a>
+							</li>
+							<li class="nav-item p-2">
+								<a class="nav-link" href="./01-HomePage.html" title="קטגריות">
+									<i class="fa fa-fw fa-inbox unread-count"></i>
+								</a>
+							</li>
+							<li class="nav-item p-2">
+								<a class="nav-link" href="./04-Contact.html" title="צור קשר">
+									<i class="fa fa-fw fa-commenting-o"></i>
+								</a>
+							</li>
+						</ul>
+						<form class="d-flex">
+							<a class="nav-link" href="./login.html" title="התחברות"><i
+        class="fa fa-fw fa-sign-in"></i></a>
+							<input id="SearchInput" class="form-control me-2" type="search" placeholder="מה ברצונכם לחפש?" aria-label="Search" />
+							<button id="SearchButton" class="btn btn-outline-success" type="submit">
+								חיפוש
+							</button>
+						</form>
+					</div>
+				</div>
+			</nav>
+			<!-- עד כאן כותרת הדף -->
+			<!-- פירורי לחם, מיקום המשתמש כרגע -->
+			<nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
+				<ol class="breadcrumb ms-5 mt-3 border border-end-0 border-start-0 border-top-0 p-2">
+					<li class="breadcrumb-item"><a href="./01-HomePage.html">דף הבית</a></li>
+					<li class="breadcrumb-item active" aria-current="page">
+						צור קשר
+					</li>
+				</ol>
+			</nav>
+			<!-- תוכן הדף: -->
+			<div class="content w-50 p-3 m-5 mt-3 bg-light">
+				<!-- טופס הזנת שם משתמש וסיסמה -->
+				<form class="row g-3 mx-5 mt-4" action="./01-HomePage.html" method="">
+					<div class="form-floating mb-1">
+						<input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+						<label for="floatingInput">שם משתמש / אימייל</label>
+					</div>
+					<div class="form-floating mb-3">
+						<input type="password" class="form-control" id="floatingPassword" placeholder="Password" />
+						<label for="floatingPassword">סיסמה</label>
+					</div>
+					<!-- כפתורי זכור אותי והרשם כמנהל -->
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1" checked>
+						<label class="form-check-label" for="inlineCheckbox1">זכור אותי</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+						<label class="form-check-label" for="inlineCheckbox2">הרשם כמנהל</label>
+					</div>
+
+					<div class="col-auto">
+						<button type="submit" class="btn btn-primary">התחברות</button>
+					</div>
+				</form>
+				<div class="m-4 fw-bold">
+					<p>אין לך חשבון עדיין? <a href="">הרשם עכשיו</a>.
+						<a href="">שכחת סיסמתך</a>?
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script></script>
+</body>
+
+</html>
